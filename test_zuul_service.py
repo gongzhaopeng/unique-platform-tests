@@ -57,7 +57,7 @@ class TestZuulService(unittest.TestCase):
         self.assertEqual(resp.status, 200)
         self.assertEqual("e254f8c-c442-4ebe-a82a-e2fc1d1ff78a", results["id"])
         self.assertEqual("customer-crm-co", results["name"])
-        self.assertEqual("Mark Balster", results["contactName"])
+        self.assertEqual("OLD::Mark Balster", results["contactName"])
         self.assertEqual("mark.balster@custcrmco.com", results["contactEmail"])
         self.assertEqual("823-555-1212", results["contactPhone"])
 
@@ -67,7 +67,7 @@ class TestZuulService(unittest.TestCase):
         self.assertEqual(resp.status, 200)
         self.assertEqual("f3831f8c-c338-4ebe-a82a-e2fc1d1ff78a", results["licenseId"])
         self.assertEqual("e254f8c-c442-4ebe-a82a-e2fc1d1ff78a", results["organizationId"])
-        self.assertEqual("Mark Balster", results["contactName"])
+        self.assertEqual("OLD::Mark Balster", results["contactName"])
         self.assertEqual("mark.balster@custcrmco.com", results["contactEmail"])
         self.assertEqual("823-555-1212", results["contactPhone"])
         self.assertEqual("CustomerPro", results["productName"])
